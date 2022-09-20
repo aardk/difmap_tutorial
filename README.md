@@ -24,7 +24,7 @@ vagrant ssh
 
 This will start a virtual machine and open a shell within the virtual machine over SSH. If you get a Docker related error, make sure that Docker Desktop is running on your machine.
 
-Now start difmap in the data directory:
+Now that you are in the virtual machine, you can start difmap by typing:
 ```
 cd data
 difmap
