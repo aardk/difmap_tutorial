@@ -11,7 +11,9 @@ https://www.vagrantup.com/downloads
 
 # Clone repository
 
+```
 git clone https://github.com/aardk/difmap2022.git
+```
 
 # Usage
 ```
