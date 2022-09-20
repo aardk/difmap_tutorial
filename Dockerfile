@@ -30,6 +30,7 @@ RUN cd /usr/local/src && \
     wget ftp://ftp.astro.caltech.edu/pub/difmap/difmap2.5o.tar.gz && \
     tar xvf difmap2.5o.tar.gz && \
     cd uvf_difmap_2.5o && \
+    sed -i '1s;^;#!/bin/sh\nbuild_alias=x86_64-linux-gnu\n;' libtecla_src/configure && \
     ./configure linux-ia64-gcc && \
     ./makeall && \
     cp difmap /usr/local/bin && \
