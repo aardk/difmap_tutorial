@@ -38,8 +38,8 @@ RUN cd /usr/local/src && \
 
 USER vagrant
 RUN mkdir /home/vagrant/data
-ARG SRC1="J1026 2542-EVN.UVF"
-ARG SRC2="J1026 2542-VLBA.UVF"
+ARG SRC1="J1026_2542-EVN.UVF"
+ARG SRC2="J1026_2542-VLBA.UVF"
 COPY --chown=vagrant:vagrant ${SRC1} /home/vagrant/data/
 COPY --chown=vagrant:vagrant ${SRC2} /home/vagrant/data/
 USER root
