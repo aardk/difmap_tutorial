@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM ubuntu:22.04
 CMD ["/usr/sbin/sshd", "-D"]
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && apt-get install -y apt-utils debconf-utils && apt-get -y upgrade && apt-get clean
@@ -27,9 +27,9 @@ RUN apt-get -y install openssh-client
 
 EXPOSE 22
 RUN cd /usr/local/src && \
-    wget ftp://ftp.astro.caltech.edu/pub/difmap/difmap2.5o.tar.gz && \
-    tar xvf difmap2.5o.tar.gz && \
-    cd uvf_difmap_2.5o && \
+    wget ftp://ftp.astro.caltech.edu/pub/difmap/difmap2.5q.tar.gz && \
+    tar xvf difmap2.5q.tar.gz && \
+    cd uvf_difmap_2.5q && \
     sed -i '1s;^;#!/bin/sh\nbuild_alias=x86_64-linux-gnu\n;' libtecla_src/configure && \
     ./configure linux-ia64-gcc && \
     ./makeall && \
