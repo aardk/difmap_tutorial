@@ -40,6 +40,10 @@ USER vagrant
 RUN mkdir /home/vagrant/data
 ARG SRC1="J1026_2542-EVN.UVF"
 ARG SRC2="J1026_2542-VLBA.UVF"
+ARG SRC3="n23c2_J0854+2006.UVDATA.FITS"
+ARG SRC4="n23c2_J0905+2052.UVDATA.FITS"
 COPY --chown=vagrant:vagrant ${SRC1} /home/vagrant/data/
 COPY --chown=vagrant:vagrant ${SRC2} /home/vagrant/data/
+COPY --chown=vagrant:vagrant ${SRC3} /home/vagrant/data/
+COPY --chown=vagrant:vagrant ${SRC4} /home/vagrant/data/
 USER root
