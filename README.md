@@ -12,12 +12,12 @@ https://www.vagrantup.com/downloads
 # Clone repository
 
 ```
-git clone https://github.com/aardk/difmap2022.git
+git clone https://github.com/aardk/difmap_tutorial.git
 ```
 
 # Usage
 ```
-cd difmap2022
+cd difmap_tutorial
 vagrant up
 vagrant ssh
 ```
